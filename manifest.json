@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Custom Image Downloaded",
+  "version": "0.1",
+  "permissions": ["downloads"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery-3.5.1.min.js", "content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
